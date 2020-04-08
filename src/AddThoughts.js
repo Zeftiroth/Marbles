@@ -73,10 +73,13 @@ function AddThoughts() {
 
   return (
     <div className="container" id="addThoughtsContainer">
+      <form>
       <AddThoughtsDiv className="addYourThoughts">write your thoughts
+
       <AddThoughtsButton className="addThoughtsPost" onClick={handleUpload}>post</AddThoughtsButton>
       </AddThoughtsDiv>
       <textarea autoResize="true" placeholder="click me and start writing" className="addThoughtsTextArea" value={content} onChange={handleContentChange}></textarea>
+      </form>
     </div>
   )
 }
